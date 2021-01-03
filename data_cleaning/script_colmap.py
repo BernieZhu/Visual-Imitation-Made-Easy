@@ -87,7 +87,7 @@ def main():
 
         if any(successes) != 0:
           print("RIP", successes)
-          return
+          # return
 
       except subprocess.CalledProcessError as e:
         print("process error: ", e)

@@ -2,6 +2,8 @@ import os
 import json
 import numpy as np
 from scipy.spatial.transform import Rotation as R
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 import utils.jsonreader as jsonreader
 
 

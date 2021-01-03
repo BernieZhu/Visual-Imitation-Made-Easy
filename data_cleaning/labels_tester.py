@@ -5,6 +5,8 @@ import numpy as np
 import time
 import matplotlib
 import cv2
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from utils import jsonreader, plot
 from utils.utils import get_img_from_fig
 from torchvision import transforms

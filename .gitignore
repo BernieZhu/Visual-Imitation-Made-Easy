@@ -5,3 +5,6 @@ data/*
 **.idea/
 results/*
 wandb/*
+myVideos/*
+.DS_Store
+saveVizVideosHere/*
