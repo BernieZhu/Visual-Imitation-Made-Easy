@@ -29,7 +29,7 @@ def main():
     folders = sorted(glob.glob(args.dir + "/vids/*"), reverse=False)
     for video in folders:
       vid_name = video.strip("/").split("/")[-1]
-      if not os.path.isdir(video) and vid_name[-3:].lower() == "mp4":
+      if not os.path.isdir(video) and vid_name[-3:].lower() == "mp4" or "MOV":
         split_video(video, endpath + vid_name[:-4] + "_frames/", 0.2)
 
     folders = sorted(glob.glob(args.dir + "/frames/*"), reverse=False)

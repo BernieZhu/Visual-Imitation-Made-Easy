@@ -68,7 +68,7 @@ def main():
     prefix = args.dir + "/"
     total_count = 0
     for f in vids:
-      if not os.path.isdir(f) and f[-3:].lower() == "mp4":
+      if not os.path.isdir(f) and f[-3:].lower() == "mp4" or "MOV":
         if not save_path:
           save_path = prefix + f[:-4] + "_frames/"
         else:
